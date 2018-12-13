@@ -18,18 +18,20 @@
 double* function(double tab[]){
 
 
-	double prec = pow(10,-8);										//definiuję potrzebne zmienne
-	double i = 0;   												//typ double - dokladność 15-16 cyfr po przecinku
+	double prec = pow(10,-8);						//definiuję potrzebne zmienne
+	double i = 0;   							//typ double - dokladność 15-16 cyfr po przecinku
 	int j = 0;
 	double y1 = 0.0;
 	double y2 = 0.0;
 
 	while (i <= 1){
-		y1 = cbrt(i);												//obliczam pierwiastek st. 3
-		y2 = pow(1-pow(i,4.0),1/(4.0));								//obliczam
+		y1 = cbrt(i);							//obliczam pierwiastek st. 3
+		y2 = pow(1-pow(i,4.0),1/(4.0));					//obliczam y2
 
 		assert(y1 >= 0);
+		assert(y1 <= 1);
 		assert(y2 >= 0);
+		assert(y2 <= 1);
 
 		double diff = (abs(y1*(pow(10,8)) - y2*pow(10,8)))/(pow(10,8));//aby nie utracić precyzji mnożę * 10^8
 
