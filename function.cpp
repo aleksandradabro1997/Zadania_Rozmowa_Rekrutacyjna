@@ -38,7 +38,7 @@ int main(){
 
 	array<double,2>  tab1 = function();
 
-	for(double & i: tab1)
+	for(double & i: tab1)				//wyswietlane sa kolejno pole , dlugosc
 		cout<< setprecision(9) << i <<endl;
 
 }
