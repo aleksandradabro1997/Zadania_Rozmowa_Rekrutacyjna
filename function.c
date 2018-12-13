@@ -58,8 +58,8 @@ int main(){
 	double *tab = function(tab1);
 	assert(tab!=NULL);
 	int i;
-	for(i=0 ; i<6;i++){
-		assert(tab[i]!='/0');
+	for(i=0 ; i<6;i++){				//mamy wyswietlane kolejno Y1, Y2, X 
+		assert(tab[i]!='/0');			//rozmiar tablicy został wyznaczony doswiadczalnie
 		printf("%.8f\n",tab[i]);
 	}
 
