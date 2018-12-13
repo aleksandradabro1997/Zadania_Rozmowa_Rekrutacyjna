@@ -6,6 +6,9 @@
 #include <array>
 #include <cassert>
 
+/*
+Testy zostały wykonane przy użyciu GoogleTest i biblioteki assert.
+*/
 
 using namespace std;
 double f_sin(double x){return pow(sin(x),2);}
